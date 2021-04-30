@@ -1,7 +1,7 @@
 import './Navbar.css';
 import {Link} from 'react-router-dom'
 
-function Navbar() {
+function Navbar({click}) {
 	return (
 		<nav className="navbar">
 			{/* log */}
@@ -27,7 +27,7 @@ function Navbar() {
 
 			</ul>
 			{/* hamburger */}
-			<div className="hamburger__menu">
+			<div className="hamburger__menu" onClick={click}>
 				<div></div>
 				<div></div>
 				<div></div>
